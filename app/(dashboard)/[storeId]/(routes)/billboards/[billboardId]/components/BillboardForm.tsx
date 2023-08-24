@@ -10,9 +10,9 @@ import { useParams, useRouter } from "next/navigation"
 import axios from "axios"
 
 import { Billboard } from "@prisma/client"
-import Header from "@/components/ui/header"
-import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
+import { Header } from "@/components/ui/Header"
+import { Button } from "@/components/ui/Button"
+import { Separator } from "@/components/ui/Separator"
 import {
     Form,
     FormControl,
@@ -20,10 +20,10 @@ import {
     FormItem,
     FormLabel,
     FormMessage
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-import AlertModal from "@/components/modals/alert-modal"
-import ImageUpload from "@/components/ui/image-upload"
+} from "@/components/ui/Form"
+import { Input } from "@/components/ui/Input"
+import AlertModal from "@/components/modals/AlertModal"
+import ImageUpload from "@/components/ui/ImageUpload"
 
 interface BillboardFormProps {
     initialData: Billboard | null
@@ -83,7 +83,7 @@ const BillboardForm: FC<BillboardFormProps> = ({
 
             await axios.delete(`/api/${params.storeId}/billboards/${params.billboardId}`)
             router.refresh()
-            router.push('/')
+            router.push(`/${params.storeId}/billboards`)
             toast.success('Billboard deleted successfully')
         } catch (error) {
             toast.error('Make sure that you already removed all categories using this billboard')
@@ -168,7 +168,6 @@ const BillboardForm: FC<BillboardFormProps> = ({
                     </Button>
                 </form>
             </Form>
-            <Separator />
         </>
     )
 }

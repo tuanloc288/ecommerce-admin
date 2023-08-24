@@ -6,7 +6,7 @@ interface HeaderProps {
 }
 
 
-const Header: FC<HeaderProps> = ({
+export const Header: FC<HeaderProps> = ({
     title,
     description
 }) => {
@@ -21,5 +21,3 @@ const Header: FC<HeaderProps> = ({
         </div>
     )
 }
-
-export default Header

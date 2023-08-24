@@ -7,8 +7,8 @@ import { useState } from 'react'
 import axios from 'axios'
 import toast from 'react-hot-toast'
 
-import { useStoreModal } from "@/hooks/use-store-modal"
-import { Modal } from "@/components/ui/modal"
+import { useStoreModal } from "@/hooks/useStoreModal"
+import { Modal } from "@/components/ui/Modal"
 import {
     Form,
     FormControl,
@@ -16,9 +16,9 @@ import {
     FormItem,
     FormLabel,
     FormMessage
-} from "@/components/ui/form"
-import { Input } from '@/components/ui/input'
-import { Button } from "@/components/ui/button"
+} from "@/components/ui/Form"
+import { Input } from '@/components/ui/Input'
+import { Button } from "@/components/ui/Button"
 
 const formSchema = z.object({
     name: z.string().min(3, { message: "Store name have to be at least 3 characters" }),

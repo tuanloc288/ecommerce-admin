@@ -10,9 +10,9 @@ import { useParams, useRouter } from "next/navigation"
 import axios from "axios"
 
 import { Store } from "@prisma/client"
-import Header from "@/components/ui/header"
-import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
+import { Header } from "@/components/ui/Header"
+import { Button } from "@/components/ui/Button"
+import { Separator } from "@/components/ui/Separator"
 import {
     Form,
     FormControl,
@@ -20,11 +20,11 @@ import {
     FormItem,
     FormLabel,
     FormMessage
-} from "@/components/ui/form"
-import { Input } from "@/components/ui/input"
-import AlertModal from "@/components/modals/alert-modal"
-import ApiAlert from "@/components/ui/api-alert"
-import { useOrigin } from "@/hooks/use-origin"
+} from "@/components/ui/Form"
+import { Input } from "@/components/ui/Input"
+import AlertModal from "@/components/modals/AlertModal"
+import ApiAlert from "@/components/ui/ApiAlert"
+import { useOrigin } from "@/hooks/useOrigin"
 
 interface SettingsFormProps {
     initialData: Store

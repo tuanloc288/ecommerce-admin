@@ -3,9 +3,9 @@
 import { FC } from "react"
 import { Copy, ServerIcon } from "lucide-react"
 
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { Badge, BadgeProps } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/Alert"
+import { Badge, BadgeProps } from "@/components/ui/Badge"
+import { Button } from "@/components/ui/Button"
 import { toast } from "react-hot-toast"
 
 interface ApiAlertProps {

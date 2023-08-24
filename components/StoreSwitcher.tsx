@@ -4,10 +4,10 @@ import { useState } from "react"
 import { useParams, useRouter } from "next/navigation"
 import { Check, ChevronsUpDown, PlusCircle, Store as StoreIcon } from "lucide-react"
 
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
-import { useStoreModal } from "@/hooks/use-store-modal"
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/Popover"
+import { useStoreModal } from "@/hooks/useStoreModal"
 import { Store } from "@prisma/client"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/Button"
 import { cn } from "@/lib/utils"
 import { 
     Command,
@@ -17,7 +17,7 @@ import {
     CommandItem,
     CommandList,
     CommandSeparator
-} from "@/components/ui/command"
+} from "@/components/ui/Command"
 
 type PopoverTriggerProps = React.ComponentPropsWithoutRef<typeof PopoverTrigger>
 

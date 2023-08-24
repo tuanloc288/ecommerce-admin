@@ -1,8 +1,8 @@
 'use client'
 
 import { FC, useEffect, useState } from "react"
-import { Modal } from "@/components/ui/modal"
-import { Button } from "@/components/ui/button"
+import { Modal } from "@/components/ui/Modal"
+import { Button } from "@/components/ui/Button"
 
 interface AlertModalProps {
     isOpen: boolean
@@ -27,7 +27,7 @@ const AlertModal: FC<AlertModalProps> = ({
 
     return (
         <Modal
-            title="Confirmation to delete this store"
+            title="Confirmation to delete"
             description="This action cannot be undo! Think twice before you click 'Confirm'"
             isOpen={isOpen}
             onClose={onClose}
