@@ -21,7 +21,7 @@ import { Input } from '@/components/ui/input'
 import { Button } from "@/components/ui/button"
 
 const formSchema = z.object({
-    name: z.string().min(3, { message: "Tên cửa hàng phải có ít nhất 3 ký tự" }),
+    name: z.string().min(3, { message: "Store name have to be at least 3 characters" }),
 })
 
 export const StoreModal = () => {
@@ -45,7 +45,7 @@ export const StoreModal = () => {
             // use this bc it gonna do a full reset
             window.location.assign(`/${res.data.id}`)
         } catch (error) {
-            toast.error("Đã có lỗi xảy ra! Hãy thử lại sau.")
+            toast.error("Something went wrong! Try again later.")
         } finally {
             setLoading(false)
         }
@@ -53,8 +53,8 @@ export const StoreModal = () => {
 
     return (
         <Modal
-            title="Tạo một cửa hàng"
-            description="Tạo một cửa hàng trực tuyến mới để quản lý sản phẩm và hóa đơn"
+            title="Create a store"
+            description="Create a new store to manage products, categories and others"
             isOpen={isOpen}
             onClose={onClose}
         >
@@ -68,7 +68,7 @@ export const StoreModal = () => {
                                 render={({ field }) => (
                                     <FormItem>
                                         <FormLabel>
-                                            Tên cửa hàng
+                                            Name
                                         </FormLabel>
                                         <FormControl>
                                             <Input disabled={loading} placeholder='Ecommerce store name...' {...field} />
@@ -79,10 +79,10 @@ export const StoreModal = () => {
                             />
                             <div className='pt-6 space-x-2 flex items-center justify-end w-full'>
                                 <Button disabled={loading} variant="outline" onClick={onClose}>
-                                    Trở về
+                                    Cancel
                                 </Button>
                                 <Button disabled={loading} type='submit'>
-                                    Tiếp tục
+                                    Create
                                 </Button>
                             </div>
                         </form>

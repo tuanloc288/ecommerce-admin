@@ -56,25 +56,25 @@ const StoreSwitcher = ({
                     size='sm'
                     role="combobox"
                     aria-expanded={open}
-                    aria-label="Chọn một cửa hàng"
+                    aria-label="Choose a store"
                     className={cn(`
                         w-[200px]
                         justify-between
                     `, className)}
                 >
                     <StoreIcon className="mr-2 h-4 w-4"/>
-                    {currentStore?.label}
+                    <span className="truncate"> {currentStore?.label} </span>
                     <ChevronsUpDown className="ml-auto h-4 w-4 shrink-0 opacity-50"/>
                 </Button>
             </PopoverTrigger>
             <PopoverContent className="w-[200px] p-0">
                 <Command>
                     <CommandList>
-                        <CommandInput placeholder="Tìm cửa hàng"/>
+                        <CommandInput placeholder="Search for a store..."/>
                         <CommandEmpty>
-                            Không có kết quả
+                            No store found
                         </CommandEmpty>
-                        <CommandGroup heading="Cửa hàng">
+                        <CommandGroup heading="Stores">
                             {formattedItems.map((store) => (
                                 <CommandItem
                                     key={store.value}
@@ -109,7 +109,7 @@ const StoreSwitcher = ({
                                 className="cursor-pointer"
                             >
                                 <PlusCircle className="mr-2 h-5 w-5"/>
-                                Create store
+                                 Create a new store
                             </CommandItem>
                         </CommandGroup>
                     </CommandList>
