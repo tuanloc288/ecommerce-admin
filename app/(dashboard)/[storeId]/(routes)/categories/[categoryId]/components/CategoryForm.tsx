@@ -29,7 +29,7 @@ import {
     SelectItem,
     SelectTrigger,
     SelectValue
-} from "@/components/ui/select"
+} from "@/components/ui/Select"
 
 interface CategoryFormProps {
     initialData: Category | null
@@ -38,7 +38,7 @@ interface CategoryFormProps {
 
 const formSchema = z.object({
     name: z.string().min(3),
-    billboardId: z.string().min(1)
+    billboardId: z.string().min(1, { message: "Please select a billboard" })
 })
 
 type CategoryFormValue = z.infer<typeof formSchema>
