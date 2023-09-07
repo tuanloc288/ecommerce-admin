@@ -1,6 +1,6 @@
 # Admin dashboard with Next.js 13 App Router: React, Tailwind + Shadcn UI, Prisma, MongoDB
 
-![Dashboard](https://res.cloudinary.com/dbiliw2ja/image/upload/v1694092563/dashboard_q44rfc.png)
+![Dashboard](https://res.cloudinary.com/dbiliw2ja/image/upload/v1694095970/dashboard_brsspf.png)
 ![Product](https://res.cloudinary.com/dbiliw2ja/image/upload/v1694092563/product_ezuya7.png)
 ![APIs](https://res.cloudinary.com/dbiliw2ja/image/upload/v1694092563/apis_igixnd.png)
 ![Light mode](https://res.cloudinary.com/dbiliw2ja/image/upload/v1694092563/light_zw7rvf.png)
