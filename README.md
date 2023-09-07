@@ -20,11 +20,15 @@ Features:
 - Form validation and handling using react-hook-form
 - Notification using react-hot-toast
 - Page loading state
-- Each account can have multiple store running as the same time
+- Each account can have multiple store running at the same time
 - Simple chart and orders data for analysis
 - Fully customizable store content such as store name, billboard, category, product, color , size
-- The admin dashboard itself also provide multiple apis for each customizable content list above, these apis will be used by the admin dashboard but also some will be used by the store
 - Can also copy these customizable content id for your desired use case.
+
+Note:
+
+- The admin dashboard itself also provide multiple apis for each customizable content list above, these apis will be used by the admin dashboard but also some will be used by the store
+- After each successful payment, use will have to uncheck the "Out of stock" box to make every products appear in that recent order available again on the store page
 
 ### Prerequisites
 
