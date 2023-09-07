@@ -25,6 +25,7 @@ Features:
 - Simple chart and orders data for analysis
 - Fully customizable store content such as store name, billboard, category, product, color , size
 - The admin dashboard itself also provide multiple apis for each customizable content list above, these apis will be used by the admin dashboard but also some will be used by the store
+- Can also copy these customizable content id for your desired use case.
 
 ### Prerequisites
 
