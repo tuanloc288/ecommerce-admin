@@ -20,7 +20,6 @@ Features:
 - Form validation and handling using react-hook-form
 - Notification using react-hot-toast
 - Page loading state
-- Payment can be done by Stripe
 - Each account can have multiple store running as the same time
 - Simple chart and orders data for analysis
 - Fully customizable store content such as store name, billboard, category, product, color , size
